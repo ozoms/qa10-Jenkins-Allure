@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 @pytest.fixture(scope="function", autouse=True)
-def open_browser():
+def form_management_function():
     options = Options()
     options.capabilities.update(selenoid_capabilities)
     browser.config.driver = webdriver.Remote(
