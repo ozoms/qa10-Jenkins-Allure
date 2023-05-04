@@ -19,9 +19,9 @@ def open_browser():
 
     yield
 
-    attach.add_screenshot()
-    attach.add_html()
-    attach.add_video()
-    attach.add_logs()
+    attach.add_screenshot(browser)
+    attach.add_html(browser)
+    attach.add_video(browser)
+    attach.add_logs(browser)
 
     browser.quit()
